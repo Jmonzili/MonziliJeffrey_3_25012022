@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+.explore {
+    background-color: $grey-light;
+    flex-wrap: wrap;
+    @include center;
+    
+}
+.explore-titre {
+    &.explore-txt {
+        display: flex;
+        align-items: center;
+    }
+}
+.explore-btn {
+    border: 0 solid;
+    border-radius: 30px;
+    background-color: $color-primaire;
+    color: white;
+    padding: 1rem;
+}
+
+.localisation {
+    width: 100%;
+    background-color: $grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside{
+    li{
+        border: 0 solid ;
+        box-shadow: 0 2px 2px 0;
+        border-radius: 30px;
+        background-color: $grey-light;
+        padding: 10px;
+        margin: 10px;
+        font-weight: 500;
+    }  
+}
+.restaurant-list {
+    width: none;
+    background-color: $grey-light;
+    .section-restaurants {
+       @include center; 
+    }
+}

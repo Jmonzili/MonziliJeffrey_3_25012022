@@ -1,14 +1,13 @@
 @import "./sass/base/body";
 @import "./sass/utils/variable";
+@import "./sass/utils/mixins";
 @import "./sass/layout/header";
 @import "./sass/layout/footer";
-
+@import "./sass/pages/accueil";
 
 body {
     margin: O;
     padding: 0;
-    
-    background-color: $grey-light;
 }
 ul{
     list-style: none;
