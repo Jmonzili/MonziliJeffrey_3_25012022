@@ -1,0 +1,12 @@
+//********HEADER********//
+header{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+}
+h1{
+    &.logo-principale{
+        font-family: Shrikhand;
+    
+    }
+}
