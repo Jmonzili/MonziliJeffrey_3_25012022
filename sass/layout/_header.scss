@@ -4,12 +4,16 @@ header{
     width: 100%;
     background-color: white;
     justify-content: center;
-    box-shadow: 0 3px 5px 0;
+    align-items: center;
+    box-shadow: 0 3px 5px 0 $shadow-color;
     position: relative;
 }
-h1{
-    &.logo-principale{
-        font-family: Shrikhand;
-        margin: 0;
-    }
+.back-icon {
+    position: relative;
+    justify-content: flex-start;
+}
+.logo-principale {
+    font-family: Shrikhand;
+    margin: 0;
+    
 }

@@ -35,7 +35,7 @@ aside{
     padding: 2Opx O;
     li{
         border: 0 solid ;
-        box-shadow: 0 2px 2px 0;
+        box-shadow: 0 2px 2px 0 $shadow-color;
         border-radius: 30px;
         background-color: $grey-light;
         padding: 20px;
@@ -54,7 +54,7 @@ aside{
 .resto-card {
     border: 0 solid;
     border-radius: 15px;
-    box-shadow: 0 1px 3px 3px #C2C2C2;
+    box-shadow: 0 1px 3px 3px $shadow-color;
     background-color: white;
     margin: 15px 0;
     .description {
