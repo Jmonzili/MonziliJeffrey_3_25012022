@@ -26,6 +26,7 @@ body {
 .explore-btn {
     border: 0 solid;
     border-radius: 30px;
+    box-shadow: 2px 3px 2px 3px $shadow-color;
     background-color: $color-primaire;
     color: white;
     padding: 1rem;
