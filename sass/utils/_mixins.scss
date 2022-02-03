@@ -4,7 +4,12 @@
         justify-content: center;
         align-items: center;
 }
+
 @mixin nav-display {
     display: flex;
     flex-direction: column;
+}
+
+@mixin backgroun_btn {
+    background: linear-gradient(180deg, $color-secondaire, $color-primaire);
 }

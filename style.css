@@ -147,9 +147,11 @@ body {
   border-radius: 30px;
   -webkit-box-shadow: 2px 3px 2px 3px #C2C2C2;
           box-shadow: 2px 3px 2px 3px #C2C2C2;
-  background-color: #9356DC;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: white;
   padding: 1rem;
+  font-weight: 500;
 }
 
 aside {
@@ -349,7 +351,8 @@ a:visited {
 .btn-commander {
   border: 0 solid;
   border-radius: 30px;
-  background-color: #FF79DA;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(180deg, #FF79DA, #9356DC);
   color: white;
   padding: 15px 50px;
   font-weight: 400;
