@@ -34,6 +34,7 @@
 
 body {
   font-family: Roboto, sans-serif;
+  font-weight: 300;
 }
 
 header {
@@ -41,6 +42,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 65px;
   background-color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -50,8 +52,7 @@ header {
           align-items: center;
   -webkit-box-shadow: 0 3px 5px 0 #C2C2C2;
           box-shadow: 0 3px 5px 0 #C2C2C2;
-  position: absolute;
-  z-index: 1;
+  position: relative;
 }
 
 .back-icon {
@@ -59,11 +60,16 @@ header {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  z-index: 1;
+  font-size: 1.5rem;
 }
 
 .logo-principale {
   font-family: Shrikhand;
-  margin: 0;
+  height: 65px;
 }
 
 /********Footer********/
@@ -133,15 +139,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 0;
-}
-
-.explore-titre.explore-txt {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  text-align: center;
 }
 
 .explore-btn {
@@ -253,12 +251,6 @@ a:visited {
 }
 
 .menu {
-  background-color: #F2F2F2;
-  border: 0 solid;
-  border-radius: 30px 30px 0 0;
-  position: relative;
-  width: 100%;
-  padding: 30px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -272,6 +264,13 @@ a:visited {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #F2F2F2;
+  border: 0 solid;
+  border-radius: 40px 40px 0 0;
+  position: relative;
+  width: 100%;
+  margin-top: -70px;
+  padding: 10px 0 40px 0;
 }
 
 .menu .header_menu {
@@ -287,10 +286,17 @@ a:visited {
 
 .menu .header_menu i {
   font-size: 2rem;
-  font-weight: lighter;
 }
 
-.menu ._fnt {
+.sous-titre {
+  font-weight: 300;
+}
+
+.enter.plats.desserts {
+  width: 98%;
+}
+
+._fnt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +305,7 @@ a:visited {
   border-radius: 15px;
   -webkit-box-shadow: 2px 3px 5px 2px #E2E2E2;
           box-shadow: 2px 3px 5px 2px #E2E2E2;
-  padding: 1px 15px;
+  padding: 1px 20px;
   margin: 20px 5px;
   width: 100%;
   -webkit-box-pack: justify;
@@ -307,12 +313,37 @@ a:visited {
           justify-content: space-between;
 }
 
-.menu ._fnt .prix {
+._fnt .prix {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+._fnt .p-bold {
   font-weight: bold;
 }
 
-.menu ._fnt .p-bold {
-  font-weight: bold;
+.txt-fnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+}
+
+.txt-fnt p {
+  margin: 5px 0;
 }
 
 .btn-commander {

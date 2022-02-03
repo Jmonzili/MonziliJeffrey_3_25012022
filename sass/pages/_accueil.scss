@@ -16,13 +16,9 @@ body {
     flex-wrap: wrap;
     @include center;
     padding: 30px 0;
+    text-align: center;
 }
-.explore-titre {
-    &.explore-txt {
-        display: flex;
-        align-items: center;
-    }
-}
+
 .explore-btn {
     border: 0 solid;
     border-radius: 30px;
