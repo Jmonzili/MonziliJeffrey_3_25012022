@@ -10,4 +10,4 @@ suivi du projet et son hébergement
 (Github)
 - Mettre en œuvre des effets CSS graphiques avancés
 - Mettre en place son environnement Front-End
-- Mettre en place une structure de navigation pour un
+- Mettre en place une structure de navigation pour un site web
