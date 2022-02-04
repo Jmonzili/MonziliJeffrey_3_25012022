@@ -4,6 +4,10 @@
         justify-content: center;
         align-items: center;
 }
+@mixin shrikhand {
+    font-family: Shrikhand;
+    font-weight: 500;
+}
 
 @mixin nav-display {
     display: flex;

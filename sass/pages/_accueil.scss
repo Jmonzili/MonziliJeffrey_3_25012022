@@ -10,6 +10,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    i {
+        margin-right: 5%;
+    }
 }
 .explore {
     background-color: $grey-light;
