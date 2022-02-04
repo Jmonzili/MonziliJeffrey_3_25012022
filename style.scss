@@ -31,7 +31,7 @@ a{
 }
 
 .menu {
-    
+    @include center;
     background-color: $grey-light;
     border: 0 solid;
     border-radius: 40px 40px 0 0;
@@ -59,15 +59,11 @@ a{
     margin-left: 10px;
 }
 
-.enter {
-    
-    &.plats {
-        &.desserts {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;  
-        }
-    }
+.block-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 300px;
 }
 
 ._fnt {
@@ -75,8 +71,7 @@ a{
     background-color: white;
     border: 0 solid;
     border-radius: 15px;
-    box-shadow: 2px 3px 5px 2px $grey;
-    
+    box-shadow: 3px 3px 5px  $grey;
     width: 100%;  
     justify-content: space-between;
     .prix {
@@ -94,9 +89,10 @@ a{
     display: flex;
     flex-direction: column;
     padding: 5px 0;
+    overflow: hidden;
     p {
         margin: 5px 0;
-        text-overflow: ellipsis;
+        
     }
 }
 
@@ -107,5 +103,5 @@ a{
     color: white;
     padding: 15px 50px;
     font-weight: 400;
-    
+    margin: 3rem 0;
 }

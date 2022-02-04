@@ -267,6 +267,19 @@ a:visited {
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #F2F2F2;
   border: 0 solid;
   border-radius: 40px 40px 0 0;
@@ -302,7 +315,7 @@ a:visited {
   margin-left: 10px;
 }
 
-.enter.plats.desserts {
+.block-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,6 +326,7 @@ a:visited {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 300px;
 }
 
 ._fnt {
@@ -322,8 +336,8 @@ a:visited {
   background-color: white;
   border: 0 solid;
   border-radius: 15px;
-  -webkit-box-shadow: 2px 3px 5px 2px #E2E2E2;
-          box-shadow: 2px 3px 5px 2px #E2E2E2;
+  -webkit-box-shadow: 3px 3px 5px #E2E2E2;
+          box-shadow: 3px 3px 5px #E2E2E2;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -358,11 +372,11 @@ a:visited {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5px 0;
+  overflow: hidden;
 }
 
 .txt-fnt p {
   margin: 5px 0;
-  text-overflow: ellipsis;
 }
 
 .btn-commander {
@@ -373,5 +387,6 @@ a:visited {
   color: white;
   padding: 15px 50px;
   font-weight: 400;
+  margin: 3rem 0;
 }
 /*# sourceMappingURL=style.css.map */
