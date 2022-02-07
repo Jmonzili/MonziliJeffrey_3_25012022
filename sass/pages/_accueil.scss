@@ -34,6 +34,9 @@ body {
 
 aside{
     padding: 2Opx O;
+    ul{
+        padding: 0;
+    }
     li{
         border: 0 solid ;
         box-shadow: 0 2px 2px 0 $shadow-color;

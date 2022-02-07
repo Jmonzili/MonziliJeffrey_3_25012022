@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   font-weight: 300;
 }
 
@@ -157,6 +157,10 @@ body {
 
 aside {
   padding: 2Opx O;
+}
+
+aside ul {
+  padding: 0;
 }
 
 aside li {
@@ -326,7 +330,6 @@ a:visited {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 300px;
 }
 
 ._fnt {
