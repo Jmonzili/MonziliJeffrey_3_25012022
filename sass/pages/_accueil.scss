@@ -45,15 +45,28 @@ aside {
         padding: 0;
     }
     li {
+        display: flex;
         background-color: $grey-light;
         border: 0 solid ;
         box-shadow: 0 2px 2px 0 $shadow-color;
         border-radius: 20px;
-        padding: 20px;
+        padding: 30px 20px;
         margin: 15px 0;
+        font-size: 18px;
         font-weight: 500;
+        .number {
+            background-color: $color-primaire;
+            color: $grey-light;
+            padding: 5px 10px;
+            border-radius: 20px;
+            position: relative;
+            top: -5px;
+            right: 30px;
+            font-size: 16px;
+        }
         i {
             color: #1f1d1dc0;
+            padding-right: 15px;
         }
     }  
 }

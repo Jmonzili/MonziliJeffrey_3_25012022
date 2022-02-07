@@ -178,18 +178,34 @@ aside ul {
 }
 
 aside li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #F2F2F2;
   border: 0 solid;
   -webkit-box-shadow: 0 2px 2px 0 #C2C2C2;
           box-shadow: 0 2px 2px 0 #C2C2C2;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px 20px;
   margin: 15px 0;
+  font-size: 18px;
   font-weight: 500;
+}
+
+aside li .number {
+  background-color: #9356DC;
+  color: #F2F2F2;
+  padding: 5px 10px;
+  border-radius: 20px;
+  position: relative;
+  top: -5px;
+  right: 30px;
+  font-size: 16px;
 }
 
 aside li i {
   color: #1f1d1dc0;
+  padding-right: 15px;
 }
 
 .section-restaurants {
