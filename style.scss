@@ -30,6 +30,10 @@ a{
     }
 }
 
+main {
+    @include center;
+}
+
 .menu {
     @include center;
     background-color: $grey-light;
