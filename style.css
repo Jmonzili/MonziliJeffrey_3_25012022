@@ -23,7 +23,7 @@
 }
 
 @font-face {
-  font-family: 'Shrikhand';
+  font-family: 'shrikhand';
   src: url(./police/shrikhand-regular.ttf);
 }
 
@@ -68,7 +68,7 @@ header {
 }
 
 .logo-principale {
-  font-family: Shrikhand;
+  font-family: 'shrikhand';
   font-weight: 500;
   height: 65px;
 }
@@ -93,7 +93,7 @@ footer li {
 }
 
 footer .mini-logo {
-  font-family: Shrikhand;
+  font-family: 'shrikhand';
   font-weight: 500;
 }
 
@@ -162,7 +162,7 @@ body {
 }
 
 aside {
-  padding: 2Opx O;
+  padding: 2Opx 15px;
 }
 
 aside ul {
@@ -170,14 +170,18 @@ aside ul {
 }
 
 aside li {
+  background-color: #F2F2F2;
   border: 0 solid;
   -webkit-box-shadow: 0 2px 2px 0 #C2C2C2;
           box-shadow: 0 2px 2px 0 #C2C2C2;
-  border-radius: 30px;
-  background-color: #F2F2F2;
+  border-radius: 20px;
   padding: 20px;
-  margin: 15px;
-  font-weight: bold;
+  margin: 15px 0;
+  font-weight: 500;
+}
+
+aside li i {
+  color: #1f1d1dc0;
 }
 
 .restaurant-list {
@@ -310,7 +314,7 @@ a:visited {
 }
 
 .menu .header_menu .menu-title {
-  font-family: Shrikhand;
+  font-family: 'shrikhand';
   font-weight: 500;
   font-size: 28px;
 }

@@ -33,18 +33,21 @@ body {
 }
 
 aside{
-    padding: 2Opx O;
+    padding: 2Opx 15px;
     ul{
         padding: 0;
     }
     li{
+        background-color: $grey-light;
         border: 0 solid ;
         box-shadow: 0 2px 2px 0 $shadow-color;
-        border-radius: 30px;
-        background-color: $grey-light;
+        border-radius: 20px;
         padding: 20px;
-        margin: 15px;
-        font-weight: bold;
+        margin: 15px 0;
+        font-weight: 500;
+        i {
+            color: #1f1d1dc0;
+        }
     }  
 }
 .restaurant-list {
