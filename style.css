@@ -57,6 +57,8 @@ header {
 
 .back-icon {
   position: relative;
+  bottom: 5px;
+  right: 20%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
