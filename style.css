@@ -293,8 +293,7 @@ a:visited {
 }
 
 .img-fond {
-  -o-object-fit: cover;
-     object-fit: cover;
+  width: 100%;
   height: 40vh;
 }
 
@@ -302,6 +301,8 @@ a:visited {
   width: 100%;
   height: 100%;
   position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 main {
@@ -393,6 +394,7 @@ main {
   -webkit-box-shadow: 3px 3px 5px #E2E2E2;
           box-shadow: 3px 3px 5px #E2E2E2;
   width: 100%;
+  margin: 10px 0;
   padding: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -414,7 +416,7 @@ main {
 }
 
 ._fnt .p-bold {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
 }
 
