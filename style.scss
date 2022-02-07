@@ -67,7 +67,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+    width: 100%;
 }
 
 ._fnt {
@@ -76,7 +76,8 @@ main {
     border: 0 solid;
     border-radius: 15px;
     box-shadow: 3px 3px 5px  $grey;
-    width: 100%;  
+    width: 100%;
+    padding: 10px;
     justify-content: space-between;
     .prix {
         font-weight: bold;
