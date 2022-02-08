@@ -14,10 +14,9 @@ ul {
     list-style: none;
 }
 a {
+    @include link;
     &:visited {
-        color: initial;
-        text-decoration: none;
-        /****mixin "link"****/
+        @include link;
     }
 }
 

@@ -315,10 +315,14 @@ ul {
   list-style: none;
 }
 
+a {
+  color: initial;
+  text-decoration: none;
+}
+
 a:visited {
   color: initial;
   text-decoration: none;
-  /****mixin "link"****/
 }
 
 .img-fond {

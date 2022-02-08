@@ -4,9 +4,15 @@
         justify-content: center;
         align-items: center;
 }
+
 @mixin shrikhand {
     font-family: 'shrikhand';
     font-weight: 500;
+}
+
+@mixin link {
+    color: initial;
+    text-decoration: none;
 }
 
 @mixin flex-box {
