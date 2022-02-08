@@ -1,6 +1,5 @@
 body {
-    display: flex;
-    flex-direction: column;
+   @include flex-box;
     width: 100%;
     box-sizing: border-box;
 }
@@ -115,9 +114,19 @@ aside {
         position: relative;
         bottom: 90%;
     }
+    .fnt-new {
+        @include fnt-new;
+        p {
+            margin: 0;
+            font-size: 14px;
+        }
+    }
 }
 .card-name {
     .bold {
         font-weight: bold;
+    }
+    .far {
+        font-size: 300;
     }
 }

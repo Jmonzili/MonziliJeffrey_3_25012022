@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'roboto';
-  src: url(./police/roboto-regular.ttf);
+  src: url(./police/roboto-regular.ttf) format("truetype");
   font-weight: 400;
 }
 
@@ -281,8 +281,29 @@ aside li i {
   bottom: 90%;
 }
 
+.img-card .fnt-new {
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+  background: #79dfaf;
+  color: #428b69;
+  font-weight: 500;
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 2px;
+}
+
+.img-card .fnt-new p {
+  margin: 0;
+  font-size: 14px;
+}
+
 .card-name .bold {
   font-weight: bold;
+}
+
+.card-name .far {
+  font-size: 300;
 }
 
 body {
@@ -294,12 +315,10 @@ ul {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
 a:visited {
   color: initial;
+  text-decoration: none;
+  /****mixin "link"****/
 }
 
 .img-fond {
@@ -412,7 +431,6 @@ main {
 }
 
 ._fnt .prix {
-  font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,6 +438,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-weight: bold;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;

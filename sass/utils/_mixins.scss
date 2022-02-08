@@ -9,11 +9,23 @@
     font-weight: 500;
 }
 
-@mixin nav-display {
+@mixin flex-box {
     display: flex;
     flex-direction: column;
 }
 
 @mixin background_btn {
     background: linear-gradient(180deg, $color-secondaire, $color-primaire);
+}
+
+@mixin fnt-new {
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    background: #79dfaf;
+    color: #428b69;
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border-radius: 2px;
 }

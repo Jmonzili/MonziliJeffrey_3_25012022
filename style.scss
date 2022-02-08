@@ -14,9 +14,10 @@ ul {
     list-style: none;
 }
 a {
-    text-decoration: none;
     &:visited {
         color: initial;
+        text-decoration: none;
+        /****mixin "link"****/
     }
 }
 
@@ -65,8 +66,7 @@ main {
 }
 
 .block-menu {
-    display: flex;
-    flex-direction: column;
+    @include flex-box;
     justify-content: space-between;
     width: 100%;
 }
@@ -82,9 +82,8 @@ main {
     padding: 10px;
     justify-content: space-between;
     .prix {
+        @include flex-box;
         font-weight: bold;
-        display: flex;
-        flex-direction: column;
         justify-content: flex-end;
     }
     .p-bold {
@@ -93,8 +92,7 @@ main {
     }   
 }
 .txt-fnt {
-    display: flex;
-    flex-direction: column;
+    @include flex-box;
     padding: 5px 0;
     overflow: hidden;
     p {
