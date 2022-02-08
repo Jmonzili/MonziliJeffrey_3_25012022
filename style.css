@@ -159,16 +159,16 @@ body {
 }
 
 .explore-btn {
-  border: 0 solid;
-  border-radius: 30px;
-  -webkit-box-shadow: 2px 3px 2px 3px #C2C2C2;
-          box-shadow: 2px 3px 2px 3px #C2C2C2;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
+  border: 0 solid;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 5px 10px 5px #C2C2C2;
+          box-shadow: 0 5px 10px 5px #C2C2C2;
   color: white;
+  font-weight: 500;
   padding: 1rem;
   margin: 20px;
-  font-weight: 500;
 }
 
 aside {
@@ -466,13 +466,15 @@ main {
 }
 
 .btn-commander {
-  border: 0 solid;
-  border-radius: 30px;
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(180deg, #FF79DA, #9356DC);
+  border: 0 solid;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 5px 10px 5px #C2C2C2;
+          box-shadow: 0 5px 10px 5px #C2C2C2;
   color: white;
+  font-weight: 500;
   padding: 15px 50px;
-  font-weight: 400;
   margin: 3rem 0;
 }
 /*# sourceMappingURL=style.css.map */

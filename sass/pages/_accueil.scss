@@ -3,6 +3,7 @@ body {
     width: 100%;
     box-sizing: border-box;
 }
+
 .localisation {
     width: 100%;
     background-color: $grey;
@@ -13,6 +14,7 @@ body {
         margin-right: 5%;
     }
 }
+
 .explore {
     width: 100%;
     background-color: $grey-light;
@@ -27,14 +29,9 @@ body {
 }
 
 .explore-btn {
-    border: 0 solid;
-    border-radius: 30px;
-    box-shadow: 2px 3px 2px 3px $shadow-color;
     @include background_btn ;
-    color: white;
     padding: 1rem;
     margin: 20px;
-    font-weight: 500;
 }
 
 aside {
@@ -55,7 +52,6 @@ aside {
         font-weight: 500;
         &:hover {
             background: $color-primaire_hover;
-            
             i {
                 color: $color-primaire;
             }
@@ -77,6 +73,7 @@ aside {
         }
     }   
 }
+
 .section-restaurants {
     width: 100%;
     background-color: $grey-light;
@@ -85,6 +82,7 @@ aside {
        @include center; 
     }
 }
+
 .resto-card {
     border: 0 solid;
     border-radius: 15px;
@@ -101,6 +99,7 @@ aside {
         }
     }
 }
+
 .img-card {
     border-radius: 15px 15px 0 0;
     width: 335px;
@@ -122,6 +121,7 @@ aside {
         }
     }
 }
+
 .card-name {
     .bold {
         font-weight: bold;
