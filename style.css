@@ -187,11 +187,19 @@ aside li {
   border: 0 solid;
   -webkit-box-shadow: 0 2px 2px 0 #C2C2C2;
           box-shadow: 0 2px 2px 0 #C2C2C2;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 30px 20px;
   margin: 15px 0;
   font-size: 18px;
   font-weight: 500;
+}
+
+aside li:hover {
+  background: #ede7f5;
+}
+
+aside li:hover i {
+  color: #9356DC;
 }
 
 aside li .number {
@@ -200,13 +208,13 @@ aside li .number {
   padding: 5px 10px;
   border-radius: 20px;
   position: relative;
-  top: -5px;
+  top: -3px;
   right: 30px;
   font-size: 16px;
 }
 
 aside li i {
-  color: #1f1d1dc0;
+  color: #3f3d3dc0;
   padding-right: 15px;
 }
 
