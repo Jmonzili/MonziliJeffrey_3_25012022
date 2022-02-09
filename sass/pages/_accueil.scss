@@ -34,7 +34,8 @@ body {
     padding: 1rem;
     margin: 20px;
     &:hover {
-       
+        opacity: 0,8;
+        background: lighten(#f7f7f7, 3%);
     }
 }
 
@@ -56,6 +57,7 @@ aside {
         font-weight: 500;
         &:hover {
             background: $color-primaire_hover;
+            cursor: pointer;
             i {
                 color: $color-primaire;
             }
