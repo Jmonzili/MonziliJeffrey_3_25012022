@@ -32,6 +32,9 @@ body {
     @include background_btn ;
     padding: 1rem;
     margin: 20px;
+    &:hover {
+        background: lighten( linear-gradient(180deg, $color-secondaire, $color-primaire), 3%);
+    }
 }
 
 aside {

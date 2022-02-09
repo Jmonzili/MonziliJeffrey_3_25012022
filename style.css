@@ -171,6 +171,10 @@ body {
   margin: 20px;
 }
 
+.explore-btn:hover {
+  background: white;
+}
+
 aside {
   width: 95%;
 }
