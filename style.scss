@@ -75,7 +75,7 @@ main {
     background-color: white;
     border: 0 solid;
     border-radius: 15px;
-    box-shadow: 3px 3px 5px  $grey;
+    @include shadow;
     width: 100%;
     margin: 10px 0;
     padding: 10px;
@@ -102,6 +102,7 @@ main {
 
 .btn-commander {
     @include background_btn ;
+    @include shadow ;
     padding: 15px 50px;
     margin: 3rem 0;
 }

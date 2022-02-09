@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'roboto';
-  src: url(police/roboto-light.ttf);
+  src: url(/police/roboto-light.ttf);
   font-weight: 300;
 }
 
@@ -163,16 +163,12 @@ body {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   border: 0 solid;
   border-radius: 30px;
-  -webkit-box-shadow: 0 5px 10px 5px #C2C2C2;
-          box-shadow: 0 5px 10px 5px #C2C2C2;
   color: white;
   font-weight: 500;
+  -webkit-box-shadow: 0 3px 10px 2px #C2C2C2;
+          box-shadow: 0 3px 10px 2px #C2C2C2;
   padding: 1rem;
   margin: 20px;
-}
-
-.explore-btn:hover {
-  background: white;
 }
 
 aside {
@@ -247,8 +243,8 @@ aside li i {
 .resto-card {
   border: 0 solid;
   border-radius: 15px;
-  -webkit-box-shadow: 2px 3px 3px #C2C2C2;
-          box-shadow: 2px 3px 3px #C2C2C2;
+  -webkit-box-shadow: 0 3px 10px 2px #C2C2C2;
+          box-shadow: 0 3px 10px 2px #C2C2C2;
   background-color: white;
   margin: 15px 0;
 }
@@ -430,8 +426,8 @@ main {
   background-color: white;
   border: 0 solid;
   border-radius: 15px;
-  -webkit-box-shadow: 3px 3px 5px #E2E2E2;
-          box-shadow: 3px 3px 5px #E2E2E2;
+  -webkit-box-shadow: 0 3px 10px 2px #C2C2C2;
+          box-shadow: 0 3px 10px 2px #C2C2C2;
   width: 100%;
   margin: 10px 0;
   padding: 10px;
@@ -480,10 +476,10 @@ main {
   background: linear-gradient(180deg, #FF79DA, #9356DC);
   border: 0 solid;
   border-radius: 30px;
-  -webkit-box-shadow: 0 5px 10px 5px #C2C2C2;
-          box-shadow: 0 5px 10px 5px #C2C2C2;
   color: white;
   font-weight: 500;
+  -webkit-box-shadow: 0 3px 10px 2px #C2C2C2;
+          box-shadow: 0 3px 10px 2px #C2C2C2;
   padding: 15px 50px;
   margin: 3rem 0;
 }

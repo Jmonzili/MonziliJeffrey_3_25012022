@@ -30,10 +30,11 @@ body {
 
 .explore-btn {
     @include background_btn ;
+    @include shadow;
     padding: 1rem;
     margin: 20px;
     &:hover {
-        background: lighten( linear-gradient(180deg, $color-secondaire, $color-primaire), 3%);
+       
     }
 }
 
@@ -89,7 +90,7 @@ aside {
 .resto-card {
     border: 0 solid;
     border-radius: 15px;
-    box-shadow: 2px 3px 3px $shadow-color;
+    @include shadow;
     background-color: white;
     margin: 15px 0;
     .description {
