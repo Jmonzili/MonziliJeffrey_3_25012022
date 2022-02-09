@@ -20,6 +20,10 @@
     flex-direction: column;
 }
 
+@mixin shadow {
+    box-shadow: 0 3px 10px 2px $shadow-color;
+}
+
 @mixin background_btn {
     background: linear-gradient(180deg, $color-secondaire, $color-primaire);
     border: 0 solid;
