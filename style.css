@@ -18,13 +18,13 @@
 
 @font-face {
   font-family: 'roboto';
-  src: url(police/roboto-bold.ttf);
+  src: url(./police/roboto-bold.ttf);
   font-weight: 700;
 }
 
 @font-face {
   font-family: 'shrikhand';
-  src: url("police/shrikhand-regular.ttf");
+  src: url("./police/shrikhand-regular.ttf");
 }
 
 * {
@@ -459,6 +459,21 @@ main {
 ._fnt .p-bold {
   font-weight: 500;
   font-size: 18px;
+}
+
+._fnt .check-case {
+  background: #99E2D0;
+  color: white;
+  font-size: 2rem;
+  position: relative;
+}
+
+._fnt .check-case i {
+  color: #99E2D0;
+  background: white;
+  position: relative;
+  border: 1rem solid #99E2D0;
+  border-radius: 500px;
 }
 
 .txt-fnt {

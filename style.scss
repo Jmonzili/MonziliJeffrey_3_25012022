@@ -88,6 +88,19 @@ main {
     .p-bold {
         font-weight: 500;
         font-size: 18px;
+    }
+    .check-case {
+        background: $color-tertiaire;
+        color: white;
+        font-size: 2rem;
+        position:relative;
+        i {
+            color: $color-tertiaire;
+            background: white;
+            position: relative;
+            border: 1rem solid $color-tertiaire;
+            border-radius: 500px
+        }
     }   
 }
 .txt-fnt {
