@@ -93,10 +93,11 @@ main {
 .txt-fnt {
     @include flex-box;
     padding: 5px 0;
-    overflow: hidden;
     p {
-        margin: 5px 0;
         
+        margin: 5px 0;
+        flex-wrap: nowrap;
+        text-overflow: ellipsis
     }
 }
 
@@ -105,4 +106,7 @@ main {
     @include shadow ;
     padding: 15px 50px;
     margin: 3rem 0;
+    &:hover {
+        @include btn-hover;
+    }
 }

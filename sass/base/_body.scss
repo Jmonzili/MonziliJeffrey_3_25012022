@@ -5,7 +5,7 @@
 }
 @font-face {
     font-family: 'roboto';
-    src: url(police/roboto-regular.ttf) format('truetype');
+    src: url(police/roboto-regular.ttf);
     font-weight: 400;
 }
 @font-face {
@@ -21,15 +21,14 @@
 
 @font-face {
     font-family: 'shrikhand';
-    src: url('police/shrikhand-regular.ttf') format('truetype');
-  }
+    src: url('police/shrikhand-regular.ttf');
+}
 
-
-*{
+* {
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'roboto';
     font-weight: 300;
 }

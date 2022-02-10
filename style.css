@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: 'roboto';
-  src: url(police/roboto-regular.ttf) format("truetype");
+  src: url(police/roboto-regular.ttf);
   font-weight: 400;
 }
 
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'shrikhand';
-  src: url("police/shrikhand-regular.ttf") format("truetype");
+  src: url("police/shrikhand-regular.ttf");
 }
 
 * {
@@ -172,8 +172,8 @@ body {
 }
 
 .explore-btn:hover {
-  opacity: 0,8;
-  background: white;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 aside {
@@ -470,11 +470,13 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5px 0;
-  overflow: hidden;
 }
 
 .txt-fnt p {
   margin: 5px 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  text-overflow: ellipsis;
 }
 
 .btn-commander {
@@ -488,5 +490,10 @@ main {
           box-shadow: 0 3px 10px 2px #C2C2C2;
   padding: 15px 50px;
   margin: 3rem 0;
+}
+
+.btn-commander:hover {
+  opacity: 0.7;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

@@ -25,11 +25,15 @@
 }
 
 @mixin background_btn {
-    background: linear-gradient(180deg, $color-secondaire, $color-primaire);
+    background: $color-btn;
     border: 0 solid;
     border-radius: 30px;
     color: white;
     font-weight: 500;
+}
+@mixin btn-hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 @mixin fnt-new {
