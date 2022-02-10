@@ -434,15 +434,40 @@ main {
   border-radius: 15px;
   -webkit-box-shadow: 0 3px 10px 2px #C2C2C2;
           box-shadow: 0 3px 10px 2px #C2C2C2;
-  width: 100%;
   margin: 10px 0;
+}
+
+._fnt:hover {
+  cursor: pointer;
+}
+
+._fnt .check-case {
+  background: #99E2D0;
+  color: white;
+  font-size: 2rem;
+  border-radius: 0 15px 15px 0;
+  padding: 0 1rem;
+}
+
+._fnt .check-case i {
+  color: #99E2D0;
+  background: white;
+  position: relative;
+  border-radius: 500px;
+}
+
+.description-fnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   padding: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-._fnt .prix {
+.description-fnt .prix {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -456,24 +481,9 @@ main {
           justify-content: flex-end;
 }
 
-._fnt .p-bold {
+.description-fnt .p-bold {
   font-weight: 500;
   font-size: 18px;
-}
-
-._fnt .check-case {
-  background: #99E2D0;
-  color: white;
-  font-size: 2rem;
-  position: relative;
-}
-
-._fnt .check-case i {
-  color: #99E2D0;
-  background: white;
-  position: relative;
-  border: 1rem solid #99E2D0;
-  border-radius: 500px;
 }
 
 .txt-fnt {
