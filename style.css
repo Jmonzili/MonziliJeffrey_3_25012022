@@ -434,6 +434,7 @@ main {
   border-radius: 15px;
   -webkit-box-shadow: 0 3px 10px 2px #C2C2C2;
           box-shadow: 0 3px 10px 2px #C2C2C2;
+  width: 100%;
   margin: 10px 0;
 }
 
@@ -444,23 +445,27 @@ main {
 ._fnt .check-case {
   background: #99E2D0;
   color: white;
+  position: relative;
   font-size: 2rem;
   border-radius: 0 15px 15px 0;
   padding: 0 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ._fnt .check-case i {
   color: #99E2D0;
   background: white;
   position: relative;
-  border-radius: 500px;
+  top: 30%;
+  border-radius: 30px;
 }
 
 .description-fnt {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 90%;
   padding: 10px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -495,13 +500,12 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .txt-fnt p {
   margin: 5px 0;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  text-overflow: ellipsis;
 }
 
 .btn-commander {

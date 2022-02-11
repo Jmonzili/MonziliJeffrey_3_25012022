@@ -76,8 +76,9 @@ main {
     border: 0 solid;
     border-radius: 15px;
     @include shadow;
-   
+    width: 100%;
     margin: 10px 0;
+    //box-sizing: border-box;
     &:hover {
         cursor: pointer;
         //   z-index: initial;
@@ -85,16 +86,19 @@ main {
     .check-case {
         background: $color-tertiaire;
         color: white;
+        position: relative;
         font-size: 2rem;
         border-radius: 0 15px 15px 0;
         //   z-index: -1;
         padding: 0 1rem;
+        box-sizing: border-box;
         i {
             color: $color-tertiaire;
             background: white;
             position: relative;
+            top: 30%;
             //border: 1rem solid $color-tertiaire;
-            border-radius: 500px
+            border-radius: 30px
         }
         
 }
@@ -102,8 +106,8 @@ main {
 
 .description-fnt {
     display: flex;
-    width: 100%;
-    
+    width: 90%;
+
     padding: 10px;
     justify-content: space-between;
     .prix {
@@ -121,11 +125,12 @@ main {
 .txt-fnt {
     @include flex-box;
     padding: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
     p {
         
         margin: 5px 0;
-        flex-wrap: nowrap;
-        text-overflow: ellipsis
+
     }
 }
 
