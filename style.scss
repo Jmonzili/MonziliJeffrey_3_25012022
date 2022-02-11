@@ -78,36 +78,35 @@ main {
     @include shadow;
     width: 100%;
     margin: 10px 0;
-    //box-sizing: border-box;
     &:hover {
         cursor: pointer;
-        //   z-index: initial;
+        .check-case {
+            display: initial;
+        }
     }
     .check-case {
+        display: none;
         background: $color-tertiaire;
         color: white;
         position: relative;
         font-size: 2rem;
         border-radius: 0 15px 15px 0;
-        //   z-index: -1;
         padding: 0 1rem;
         box-sizing: border-box;
+    
         i {
             color: $color-tertiaire;
             background: white;
             position: relative;
-            top: 30%;
-            //border: 1rem solid $color-tertiaire;
+            top: 30%; 
             border-radius: 30px
         }
-        
 }
 }
 
 .description-fnt {
     display: flex;
-    width: 90%;
-
+    width: auto;
     padding: 10px;
     justify-content: space-between;
     .prix {
@@ -127,10 +126,8 @@ main {
     padding: 5px 0;
     white-space: nowrap;
     overflow: hidden;
-    p {
-        
+    p {   
         margin: 5px 0;
-
     }
 }
 
