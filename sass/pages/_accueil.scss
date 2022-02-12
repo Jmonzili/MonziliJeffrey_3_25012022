@@ -85,8 +85,14 @@ aside {
     padding: 20px 15px;
     .restaurant-list {
        @include center; 
+       flex-wrap: wrap;
+       @include tablette-version {
+           flex-direction: row;
+       }
     }
 }
+
+
 
 .resto-card {
     border: 0 solid;

@@ -1,9 +1,11 @@
 @import "./sass/base/body";
 @import "./sass/utils/variable";
 @import "./sass/utils/mixins";
+@import "./sass/utils/map";
 @import "./sass/layout/header";
 @import "./sass/layout/footer";
 @import "./sass/pages/accueil";
+
 
 body {
     margin: O;
@@ -93,13 +95,13 @@ main {
         border-radius: 0 15px 15px 0;
         padding: 0 1rem;
         box-sizing: border-box;
-    
+
         i {
             color: $color-tertiaire;
             background: white;
             position: relative;
             top: 30%; 
-            border-radius: 30px
+            border-radius: 30px;
         }
     }
 }
