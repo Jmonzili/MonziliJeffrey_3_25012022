@@ -254,6 +254,8 @@ aside li i {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
@@ -422,7 +424,18 @@ main {
   margin-left: 10px;
 }
 
-.block-menu {
+.menu-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.menu-section .block-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,6 +449,11 @@ main {
   width: 100%;
 }
 
+/*.block-menu {
+    @include flex-box;
+    justify-content: space-between;
+    width: 100%;
+}*/
 ._fnt {
   display: -webkit-box;
   display: -ms-flexbox;

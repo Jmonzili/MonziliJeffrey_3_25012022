@@ -65,13 +65,21 @@ main {
     font-weight: 300;
     margin-left: 10px;
 }
-
-.block-menu {
+.menu-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .block-menu {
+        @include flex-box;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+/*.block-menu {
     @include flex-box;
     justify-content: space-between;
     width: 100%;
-}
-
+}*/
 ._fnt {
     display: flex;
     background-color: white;
@@ -95,7 +103,6 @@ main {
         border-radius: 0 15px 15px 0;
         padding: 0 1rem;
         box-sizing: border-box;
-
         i {
             color: $color-tertiaire;
             background: white;
