@@ -193,10 +193,16 @@ aside ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 5%;
-  /*
-        version desktop
-        
-        */
+}
+
+@media screen and (min-width: 992px) {
+  aside ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+  }
 }
 
 aside li {

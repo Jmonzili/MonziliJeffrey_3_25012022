@@ -46,10 +46,10 @@ aside {
         flex-direction: column;
         justify-content: space-between;
         padding: 0 5%;
-        /*
-        version desktop
-        
-        */
+        @include desktop-version1 {
+            flex-direction: row;
+            padding: 0;
+        }
     }
     li {
         display: flex;
