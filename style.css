@@ -181,7 +181,7 @@ aside {
 }
 
 aside ul {
-  padding: 0;
+  padding: 0 5%;
 }
 
 aside li {
@@ -193,13 +193,15 @@ aside li {
   -webkit-box-shadow: 0 3px 10px 2px #C2C2C2;
           box-shadow: 0 3px 10px 2px #C2C2C2;
   border-radius: 30px;
-  padding: 30px 20px;
+  padding: 20px 20px;
   margin: 2rem 0;
   font-size: 18px;
   font-weight: 500;
 }
 
 aside li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   background: #f5eefd;
   cursor: pointer;
 }
