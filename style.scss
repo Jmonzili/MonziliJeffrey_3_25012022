@@ -69,17 +69,20 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
+    @include desktop-version1 {
+        flex-direction: initial;
+        justify-content: space-around
+    }
     .block-menu {
         @include flex-box;
         justify-content: space-between;
         width: 100%;
+        @include desktop-version1 {
+            width: 30%;
+        }
     }
 }
-/*.block-menu {
-    @include flex-box;
-    justify-content: space-between;
-    width: 100%;
-}*/
+
 ._fnt {
     display: flex;
     background-color: white;
@@ -124,6 +127,7 @@ main {
         @include flex-box;
         font-weight: bold;
         justify-content: flex-end;
+        padding: 5px;
     }
     .p-bold {
         font-weight: 500;

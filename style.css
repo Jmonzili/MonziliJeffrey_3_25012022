@@ -507,6 +507,17 @@ main {
   width: 100%;
 }
 
+@media screen and (min-width: 992px) {
+  .menu-section {
+    -webkit-box-orient: initial;
+    -webkit-box-direction: initial;
+        -ms-flex-direction: initial;
+            flex-direction: initial;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .menu-section .block-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -521,11 +532,12 @@ main {
   width: 100%;
 }
 
-/*.block-menu {
-    @include flex-box;
-    justify-content: space-between;
-    width: 100%;
-}*/
+@media screen and (min-width: 992px) {
+  .menu-section .block-menu {
+    width: 30%;
+  }
+}
+
 ._fnt {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -592,6 +604,7 @@ main {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding: 5px;
 }
 
 .description-fnt .p-bold {
