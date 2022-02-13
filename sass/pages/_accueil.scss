@@ -40,9 +40,16 @@ body {
 
 aside {
     width: 95%;
-    
-    ul {
+    padding: 2rem 0;
+    ul { 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 0 5%;
+        /*
+        version desktop
+        
+        */
     }
     li {
         display: flex;
@@ -51,7 +58,7 @@ aside {
         @include shadow;
         border-radius: 30px;
         padding: 20px 20px;
-        margin: 2rem 0;
+        margin: 1rem 0;
         font-size: 18px;
         font-weight: 500;
         &:hover {

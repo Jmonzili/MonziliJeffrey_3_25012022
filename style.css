@@ -178,10 +178,25 @@ body {
 
 aside {
   width: 95%;
+  padding: 2rem 0;
 }
 
 aside ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 0 5%;
+  /*
+        version desktop
+        
+        */
 }
 
 aside li {
@@ -194,7 +209,7 @@ aside li {
           box-shadow: 0 3px 10px 2px #C2C2C2;
   border-radius: 30px;
   padding: 20px 20px;
-  margin: 2rem 0;
+  margin: 1rem 0;
   font-size: 18px;
   font-weight: 500;
 }
@@ -267,7 +282,7 @@ aside li i {
   width: 100%;
 }
 
-@media screen and (min-width: 710px) {
+@media screen and (min-width: 720px) {
   .section-restaurants .restaurant-list_1 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -297,7 +312,7 @@ aside li i {
   width: 100%;
 }
 
-@media screen and (min-width: 710px) {
+@media screen and (min-width: 720px) {
   .section-restaurants .restaurant-list_2 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
