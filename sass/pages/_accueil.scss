@@ -88,14 +88,20 @@ aside {
        &_1 {
         @include center; 
         flex-wrap: wrap;
+        width: 100%;
+        @include tablette-version {
+            flex-direction: row;
+            justify-content: space-around;
+        }
        }
        &_2 {
         @include center; 
         flex-wrap: wrap;
-       }
-       @include tablette-version {
-           flex-direction: row;
-           justify-content: space-around;
+        width: 100%;
+        @include tablette-version {
+            flex-direction: row;
+            justify-content: space-around;
+        }
        }
     }
 }

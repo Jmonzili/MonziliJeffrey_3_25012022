@@ -262,6 +262,18 @@ aside li i {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
+}
+
+@media screen and (min-width: 710px) {
+  .section-restaurants .restaurant-list_1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .section-restaurants .restaurant-list_2 {
@@ -280,10 +292,11 @@ aside li i {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
 }
 
 @media screen and (min-width: 710px) {
-  .section-restaurants .restaurant-list {
+  .section-restaurants .restaurant-list_2 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -337,14 +350,15 @@ aside li i {
 
 .img-card .fnt-new {
   position: relative;
-  width: 100px;
+  width: 80px;
+  height: 1.9rem;
   z-index: 1;
-  left: 60%;
-  background: #79dfaf;
+  left: 70%;
+  background: #9eebc4;
   color: #428b69;
   font-weight: 500;
   margin-top: 10px;
-  padding: 5px 5px;
+  padding: 5px;
   border-radius: 2px;
 }
 

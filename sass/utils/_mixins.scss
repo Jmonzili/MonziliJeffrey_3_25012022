@@ -38,14 +38,15 @@
 
 @mixin fnt-new {
     position: relative;
-    width: 100px;
+    width: 80px;
+    height: 1.9rem;
     z-index: 1;
-    left: 60%;
-    background: #79dfaf;
+    left: 70%;
+    background: #9eebc4;
     color: #428b69;
     font-weight: 500;
     margin-top: 10px;
-    padding: 5px 5px;
+    padding: 5px;
     border-radius: 2px;
 }
 
