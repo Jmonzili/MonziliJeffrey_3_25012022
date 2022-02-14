@@ -93,6 +93,9 @@ aside {
     padding: 20px 15px;
     .restaurant-list {
        @include center;
+       @include desktop-version2 {
+           flex-direction: row;
+       }
        &_1 {
         @include center; 
         flex-wrap: wrap;

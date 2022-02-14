@@ -60,3 +60,8 @@
         @content;
     }
 }
+@mixin desktop-version2 {
+    @media screen and (min-width: map-get($breakpoints,desktop-2)) {
+        @content;
+    }
+}

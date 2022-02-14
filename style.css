@@ -269,6 +269,15 @@ aside li i {
           align-items: center;
 }
 
+@media screen and (min-width: 1370px) {
+  .section-restaurants .restaurant-list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .section-restaurants .restaurant-list_1 {
   display: -webkit-box;
   display: -ms-flexbox;
