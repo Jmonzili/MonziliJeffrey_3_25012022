@@ -18,6 +18,7 @@ footer{
         font-weight: 500
     }
     .mini-logo{
-        @include shrikhand;
+    @include font-logo;
+        //font-family: Shrikhand;
     }
 }

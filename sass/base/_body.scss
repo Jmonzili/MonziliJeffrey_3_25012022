@@ -1,3 +1,4 @@
+/***
 @font-face {
     font-family: 'roboto';
     src: url(./police/roboto-light.ttf);
@@ -25,13 +26,15 @@
         url('./police/webfontkit-20220214-043529/shrikhand-regular-webfont.woff2') format('woff2'),
         url('./police/webfontkit-20220214-043529/shrikhand-regular-webfont.woff') format('woff');
 }
+***/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'roboto';
+    font-family: Roboto;
     font-weight: 300;
 }
 

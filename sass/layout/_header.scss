@@ -20,7 +20,7 @@ header{
     font-size: 1.5rem;
 }
 .logo-principale {
-    @include shrikhand;
+    @include font-logo;
     height: 65px;
     
 }

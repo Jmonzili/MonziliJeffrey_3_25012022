@@ -1,39 +1,40 @@
+/***
 @font-face {
-  font-family: 'roboto';
-  src: url(./police/roboto-light.ttf);
-  font-weight: 300;
+    font-family: 'roboto';
+    src: url(./police/roboto-light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(./police/roboto-regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(./police/roboto-medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'roboto';
+    src: url(./police/roboto-bold.ttf);
+    font-weight: 700;
 }
 
 @font-face {
-  font-family: 'roboto';
-  src: url(./police/roboto-regular.ttf);
-  font-weight: 400;
+    font-family: 'shrikhandregular';
+    src: url('./police/shrikhand-regular.ttf') format('truetype'),
+        url('./police/webfontkit-20220214-043529/shrikhand-regular-webfont.woff2') format('woff2'),
+        url('./police/webfontkit-20220214-043529/shrikhand-regular-webfont.woff') format('woff');
 }
-
-@font-face {
-  font-family: 'roboto';
-  src: url(./police/roboto-medium.ttf);
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: 'roboto';
-  src: url(./police/roboto-bold.ttf);
-  font-weight: 700;
-}
-
-@font-face {
-  font-family: 'shrikhandregular';
-  src: url("./police/shrikhand-regular.ttf") format("truetype"), url("./police/webfontkit-20220214-043529/shrikhand-regular-webfont.woff2") format("woff2"), url("./police/webfontkit-20220214-043529/shrikhand-regular-webfont.woff") format("woff");
-}
-
+***/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
 body {
-  font-family: 'roboto';
+  font-family: Roboto;
   font-weight: 300;
 }
 
@@ -70,8 +71,7 @@ header {
 }
 
 .logo-principale {
-  font-family: 'shrikhandregular';
-  font-weight: 500;
+  font-family: Shrikhand;
   height: 65px;
 }
 
@@ -106,8 +106,7 @@ footer li {
 }
 
 footer .mini-logo {
-  font-family: 'shrikhandregular';
-  font-weight: 500;
+  font-family: Shrikhand;
 }
 
 body {
@@ -501,8 +500,7 @@ main {
 }
 
 .menu .header_menu .menu-title {
-  font-family: 'shrikhandregular';
-  font-weight: 500;
+  font-family: Shrikhand;
   font-size: 28px;
 }
 
@@ -569,14 +567,22 @@ main {
           box-shadow: 0 3px 10px 2px #C2C2C2;
   width: 100%;
   margin: 10px 0;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 ._fnt:hover {
   cursor: pointer;
+  -webkit-transition: transfom 1s;
+  transition: transfom 1s;
 }
 
 ._fnt:hover .check-case {
   display: initial;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 ._fnt .check-case {
@@ -597,6 +603,8 @@ main {
   position: relative;
   top: 30%;
   border-radius: 30px;
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
 }
 
 .description-fnt {

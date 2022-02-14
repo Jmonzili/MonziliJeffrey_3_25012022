@@ -5,9 +5,9 @@
         align-items: center;
 }
 
-@mixin shrikhand {
-    font-family: 'shrikhandregular';
-    font-weight: 500;
+@mixin font-logo {
+    font-family: Shrikhand;
+    //font-weight: 500;
 }
 
 @mixin link {
