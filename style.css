@@ -23,8 +23,8 @@
 }
 
 @font-face {
-  font-family: 'shrikhand';
-  src: url(./police/shrikhand-regular.ttf);
+  font-family: 'shrikhandregular';
+  src: url("https://jmonzili.github.io/MonziliJeffrey_3_25012022/police/webfontkit-20220214-043529/shrikhand-regular-webfont.woff2") format("woff2"), url("https://jmonzili.github.io/MonziliJeffrey_3_25012022/police/webfontkit-20220214-043529/shrikhand-regular-webfont.woff") format("woff");
 }
 
 * {
