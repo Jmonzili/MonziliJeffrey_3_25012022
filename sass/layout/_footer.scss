@@ -8,6 +8,10 @@ footer{
     z-index: 2;
     ul{
         padding: 0;
+        @include tablette-version {
+            display: flex;
+            justify-content: space-between;
+        }
     }
     li{
         margin: 0.8rem 0;
