@@ -1,32 +1,4 @@
-/***
-@font-face {
-    font-family: 'roboto';
-    src: url(./police/roboto-light.ttf);
-    font-weight: 300;
-}
-@font-face {
-    font-family: 'roboto';
-    src: url(./police/roboto-regular.ttf);
-    font-weight: 400;
-}
-@font-face {
-    font-family: 'roboto';
-    src: url(./police/roboto-medium.ttf);
-    font-weight: 500;
-}
-@font-face {
-    font-family: 'roboto';
-    src: url(./police/roboto-bold.ttf);
-    font-weight: 700;
-}
 
-@font-face {
-    font-family: 'shrikhandregular';
-    src: url('./police/shrikhand-regular.ttf') format('truetype'),
-        url('./police/webfontkit-20220214-043529/shrikhand-regular-webfont.woff2') format('woff2'),
-        url('./police/webfontkit-20220214-043529/shrikhand-regular-webfont.woff') format('woff');
-}
-***/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap');
 
 * {
