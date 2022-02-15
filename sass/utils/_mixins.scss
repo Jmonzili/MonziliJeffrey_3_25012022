@@ -50,6 +50,10 @@
     border-radius: 2px;
 }
 
+@mixin transition-btn {
+    transition: 0.3s cubic-bezier(0.44,-0.73, 0.34, 1.71);
+}
+
 @mixin tablette-version {
     @media screen and (min-width: map-get($breakpoints,tablette)) {
         @content;

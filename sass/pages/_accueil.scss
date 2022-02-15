@@ -1,7 +1,6 @@
 body {
    @include flex-box;
     width: 100%;
-    //box-sizing: border-box;
 }
 
 .localisation {
@@ -33,6 +32,7 @@ body {
     @include shadow;
     padding: 1rem;
     margin: 20px;
+    transition: 0.3s cubic-bezier(0.44,-0.73, 0.34, 1.71);
     &:hover {
         @include btn-hover;
     }
@@ -61,6 +61,7 @@ aside {
         margin: 1rem 0;
         font-size: 18px;
         font-weight: 500;
+        transition: all 0.2s ease-in-out;
         &:hover {
             transform: scale(1.1);
             background: $color-primaire_hover;
