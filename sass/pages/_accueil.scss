@@ -19,7 +19,6 @@ body {
     background-color: $grey-light;
     flex-wrap: wrap;
     @include center;
-    box-sizing: border-box;
     padding: 30px 0;
     text-align: center;
     .explore-txt {
@@ -153,6 +152,7 @@ aside {
     }
     .fnt-new {
         @include fnt-new;
+        //animation: clignote 0.5s ease-in-out ;
         p {
             margin: 0;
             font-size: 14px;

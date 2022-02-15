@@ -1,9 +1,8 @@
-@keyframes boutton {
-    0% {
-        transform-origin: right;
+@keyframes clignote {
+    from {
+        opacity: 0;
     }
-    100% {
-
+    to {
+        opacity: 1;
     }
-    
 }
