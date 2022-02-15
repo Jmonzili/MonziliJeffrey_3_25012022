@@ -95,6 +95,11 @@ main {
     margin: 10px 0;
     &:hover {
         cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        /*
+        .description-fnt {
+            animation: slide-left 0.3s ease-in-out both;
+        }  **/
         .check-case {
             animation: slide-right 0.3s ease-in-out;
             position: relative;
@@ -159,6 +164,7 @@ main {
     @include shadow ;
     padding: 15px 50px;
     margin: 3rem 0;
+    @include btn-hover_transition;
     &:hover {
         @include btn-hover;
     }

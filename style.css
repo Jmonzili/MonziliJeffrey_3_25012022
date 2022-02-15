@@ -91,6 +91,44 @@ body {
   }
 }
 
+@-webkit-keyframes slide-left {
+  from {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    transform-origin: left;
+  }
+  to {
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
+    transform: scaleX(0.8);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    transform-origin: left;
+  }
+}
+
+@keyframes slide-left {
+  from {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    transform-origin: left;
+  }
+  to {
+    -webkit-transform: scaleX(0.8);
+            transform: scaleX(0.8);
+    transform: scaleX(0.8);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    transform-origin: left;
+  }
+}
+
 /****           Commentaire
 
 
@@ -654,6 +692,12 @@ main {
 
 ._fnt:hover {
   cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  /*
+        .description-fnt {
+            animation: slide-left 0.3s ease-in-out both;
+        }  **/
 }
 
 ._fnt:hover .check-case {
@@ -755,6 +799,8 @@ main {
           box-shadow: 0 3px 10px 2px #C2C2C2;
   padding: 15px 50px;
   margin: 3rem 0;
+  -webkit-transition: 0.3s cubic-bezier(0.44, -0.73, 0.34, 1.71);
+  transition: 0.3s cubic-bezier(0.44, -0.73, 0.34, 1.71);
 }
 
 .btn-commander:hover {

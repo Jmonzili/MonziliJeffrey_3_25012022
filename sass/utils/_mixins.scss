@@ -36,6 +36,10 @@
     cursor: pointer;
 }
 
+@mixin btn-hover_transition {
+    transition: 0.3s cubic-bezier(0.44,-0.73, 0.34, 1.71);
+}
+
 @mixin fnt-new {
     position: relative;
     width: 80px;
