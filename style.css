@@ -349,40 +349,23 @@ aside li i {
   margin: 15px 0;
 }
 
-.resto-card .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 0 15px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.resto-card .description i {
-  font-size: 2rem;
-  font-weight: 100;
-  padding-top: 25px;
-}
-
-.img-card {
+.resto-card .img-card {
   border-radius: 15px 15px 0 0;
   width: 335px;
   height: 175px;
   overflow: hidden;
 }
 
-.img-card img {
+.resto-card .img-card img {
   position: relative;
   bottom: 30%;
 }
 
-.img-card .img_2 {
-  position: relative;
+.resto-card .img-card .img_2 {
   bottom: 90%;
 }
 
-.img-card .fnt-new {
+.resto-card .img-card .fnt-new {
   position: relative;
   width: 80px;
   height: 1.9rem;
@@ -396,18 +379,57 @@ aside li i {
   border-radius: 2px;
 }
 
-.img-card .fnt-new p {
+.resto-card .img-card .fnt-new p {
   margin: 0;
   font-size: 14px;
   text-align: center;
 }
 
-.card-name .bold {
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description .card-name .bold {
   font-weight: bold;
 }
 
-.card-name .far {
-  font-size: 300;
+.description .like {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  /** Coeur test
+        :hover {
+            i {
+                color: $color-primaire;
+            }
+            .normal {
+                transform: opacity(0);
+            }
+            .solid {
+                transform: opacity(1);
+            }
+
+        }
+        **/
+}
+
+.description .like i {
+  font-size: 2rem;
+  padding-top: 25px;
+}
+
+.description .like .normal {
+  position: absolute;
+  opacity: 1;
+}
+
+.description .like .solid {
+  opacity: 0;
 }
 
 body {

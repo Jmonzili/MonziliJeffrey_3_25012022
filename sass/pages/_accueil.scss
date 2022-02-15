@@ -125,47 +125,67 @@ aside {
     @include shadow;
     background-color: white;
     margin: 15px 0;
-    .description {
-        display: flex;
-        padding: 0 15px;
-        justify-content: space-between;
+    .img-card {
+        border-radius: 15px 15px 0 0;
+        width: 335px;
+        height: 175px;
+        overflow: hidden;
+        img {
+            position: relative;
+            bottom: 30%;
+        }
+        .img_2 {
+            bottom: 90%;
+        }
+        .fnt-new {
+            @include fnt-new;
+            //animation: clignote 0.5s ease-in-out ;
+            p {
+                margin: 0;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.description {
+    display: flex;
+    padding: 0 15px;
+    justify-content: space-between;
+    .card-name {
+        .bold {
+            font-weight: bold;
+        }
+    }
+    .like {
+        transition: all 1s ease-in-out;
         i {
             font-size: 2rem;
-            font-weight: 100;
             padding-top: 25px;
         }
-    }
-}
-
-.img-card {
-    border-radius: 15px 15px 0 0;
-    width: 335px;
-    height: 175px;
-    overflow: hidden;
-    img {
-        position: relative;
-        bottom: 30%;
-    }
-    .img_2 {
-        position: relative;
-        bottom: 90%;
-    }
-    .fnt-new {
-        @include fnt-new;
-        //animation: clignote 0.5s ease-in-out ;
-        p {
-            margin: 0;
-            font-size: 14px;
-            text-align: center;
+        .normal {
+            position: absolute;
+            opacity: 1;
         }
-    }
-}
+        .solid {
+            opacity: 0;
+        }
+        /** Coeur test
+        :hover {
+            i {
+                color: $color-primaire;
+            }
+            .normal {
+                transform: opacity(0);
+            }
+            .solid {
+                transform: opacity(1);
+            }
 
-.card-name {
-    .bold {
-        font-weight: bold;
-    }
-    .far {
-        font-size: 300;
+        }
+        **/
+        
     }
 }
