@@ -89,8 +89,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .localisation {
@@ -224,7 +222,8 @@ aside li .number {
 }
 
 aside li i {
-  color: #3f3d3dc0;
+  color: #000;
+  opacity: 0.5;
   padding-right: 15px;
 }
 
@@ -367,7 +366,7 @@ aside li i {
   height: 1.9rem;
   z-index: 1;
   left: 70%;
-  background: #9eebc4;
+  background-color: #99E2D0;
   color: #428b69;
   font-weight: 500;
   margin-top: 10px;
