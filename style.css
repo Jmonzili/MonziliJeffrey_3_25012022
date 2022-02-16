@@ -769,8 +769,6 @@ main {
 }
 
 ._fnt-1:hover .description-fnt, ._fnt-2:hover .description-fnt, ._fnt-3:hover .description-fnt {
-  -webkit-animation: slide-left 0.5s ease-in-out both;
-          animation: slide-left 0.5s ease-in-out both;
   margin-right: -10px;
 }
 
