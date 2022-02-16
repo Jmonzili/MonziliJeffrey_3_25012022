@@ -85,14 +85,26 @@ main {
     }
 }
 
+._fnt{
+    &-1 {
+        @include fnt-display;
+        @include shadow;
+        animation: anim-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 500ms 1 normal both;
+    }
+    &-2 {
+        @include fnt-display;
+        @include shadow;
+        animation: anim-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 1000ms 1 normal both;
+    }
+    &-3 {
+        @include fnt-display;
+        @include shadow;
+        animation: anim-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 1500ms 1 normal both;
+    }
+}
+
 ._fnt {
-    display: flex;
-    background-color: white;
-    border: 0 solid;
-    border-radius: 15px;
-    @include shadow;
-    width: 100%;
-    margin: 10px 0;
+    &-1, &-2, &-3 {
     &:hover {
         cursor: pointer;
         transition: all 0.5s ease-in-out;
@@ -111,6 +123,9 @@ main {
             }
         }
     }
+    }
+}
+
     .check-case {
         transform: scaleX(0);
         background: $color-tertiaire;
@@ -129,7 +144,7 @@ main {
             transform: rotate(-180deg);
         }
     }
-}
+
 
 .description-fnt {
     display: flex;
