@@ -95,11 +95,10 @@ main {
     margin: 10px 0;
     &:hover {
         cursor: pointer;
-        transition: all 0.3s ease-in-out;
-        /*
+        transition: overflow 0.3s ease-in-out;
         .description-fnt {
             animation: slide-left 0.3s ease-in-out both;
-        }  **/
+        } 
         .check-case {
             animation: slide-right 0.3s ease-in-out;
             position: relative;
@@ -150,10 +149,11 @@ main {
 } 
 
 .txt-fnt {
-    @include flex-box;
+    //@include flex-box;
     padding: 5px 0;
     white-space: nowrap;
     overflow: hidden;
+    //text-overflow: ellipsis;
     p {   
         margin: 5px 0;
     }
