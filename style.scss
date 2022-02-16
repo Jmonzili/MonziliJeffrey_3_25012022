@@ -95,16 +95,18 @@ main {
     margin: 10px 0;
     &:hover {
         cursor: pointer;
-        transition: overflow 0.3s ease-in-out;
+        transition: all 0.5s ease-in-out;
         .description-fnt {
-            animation: slide-left 0.3s ease-in-out both;
+            animation: slide-left 0.5s ease-in-out both;
+            margin-right: -10px;
         } 
         .check-case {
-            animation: slide-right 0.3s ease-in-out;
+            animation: slide-right 0.5s ease-in-out both;
             position: relative;
-            transform: scaleX(1);
+            //transform: scaleX(1);
+            
             i {
-                animation: check-rotate 0.3s ease-in-out;
+                animation: check-rotate 0.5s ease-in-out;
                 transform: rotate(0); 
             }
         }

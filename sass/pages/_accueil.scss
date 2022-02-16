@@ -139,7 +139,7 @@ aside {
         }
         .fnt-new {
             @include fnt-new;
-            //animation: clignote 0.5s ease-in-out ;
+            animation: clignote 0.9s ease-in-out 6;
             p {
                 margin: 0;
                 font-size: 14px;
@@ -166,11 +166,15 @@ aside {
             padding-top: 25px;
         }
         .normal {
-            position: absolute;
+           // position: absolute;
             opacity: 1;
+            color: $color-btn;
         }
         .solid {
-            opacity: 0;
+            //opacity: 0;
+            //display: flex;
+            background: $color-btn;
+            mix-blend-mode: lighten;
         }
         /** Coeur test
         :hover {
