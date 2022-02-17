@@ -70,6 +70,7 @@ main {
         }
     }
     .like {
+        padding-top: 1rem;
         &_1 {
             @include heart-swg;
         }

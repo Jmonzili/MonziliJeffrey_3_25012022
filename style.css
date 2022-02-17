@@ -709,6 +709,10 @@ main {
   opacity: 0;
 }
 
+.header_menu .like {
+  padding-top: 1rem;
+}
+
 .header_menu .like_1 {
   opacity: 0;
   position: absolute;
