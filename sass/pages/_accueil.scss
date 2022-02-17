@@ -165,31 +165,31 @@ aside {
             font-size: 2rem;
             padding-top: 25px;
         }
-        .normal {
-           // position: absolute;
+        &_1 {
+           
             opacity: 1;
-            color: $color-btn;
+            //color: $color-btn;
         }
-        .solid {
-            //opacity: 0;
+        &_2{
+            opacity: 0;
             //display: flex;
-            background: $color-btn;
-            mix-blend-mode: lighten;
-        }
-        /** Coeur test
-        :hover {
-            i {
-                color: $color-primaire;
-            }
-            .normal {
-                transform: opacity(0);
-            }
-            .solid {
-                transform: opacity(1);
-            }
+            position: absolute;
+            background-image: $color-btn;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
 
+            //mix-blend-mode: lighten;
         }
-        **/
-        
     }
+    &:hover .like {
+        &_1 {
+            opacity: 0;
+        }
+        &_2 {
+            opacity: 1;
+            
+        }
+        
+    }    
 }
