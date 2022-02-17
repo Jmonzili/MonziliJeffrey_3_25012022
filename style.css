@@ -593,8 +593,8 @@ aside li i {
 .description .like_2 {
   opacity: 0;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 121, 218, 0.9)), to(rgba(147, 86, 220, 0.9)));
-  background-image: linear-gradient(90deg, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+  background-image: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(90deg, #FF79DA, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
