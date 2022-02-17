@@ -4,7 +4,9 @@
           box-sizing: border-box;
 }
 
-body {
+html, body {
+  width: 100%;
+  height: auto;
   font-family: Roboto;
   font-weight: 300;
 }
@@ -577,11 +579,6 @@ aside li i {
   font-weight: bold;
 }
 
-.description .like {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
 .description .like i {
   font-size: 2rem;
   padding-top: 25px;
@@ -589,16 +586,20 @@ aside li i {
 
 .description .like_1 {
   opacity: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .description .like_2 {
   opacity: 0;
   position: absolute;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 121, 218, 0.9)), to(rgba(147, 86, 220, 0.9)));
-  background-image: linear-gradient(180deg, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 121, 218, 0.9)), to(rgba(147, 86, 220, 0.9)));
+  background-image: linear-gradient(90deg, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .description:hover .like_1 {

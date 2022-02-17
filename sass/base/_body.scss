@@ -3,9 +3,12 @@
 
 * {
     box-sizing: border-box;
+
 }
 
-body {
+html, body {
+    width: 100%;
+    height: auto;
     font-family: Roboto;
     font-weight: 300;
 }
