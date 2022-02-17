@@ -174,7 +174,7 @@ aside {
             opacity: 0;
             //display: flex;
             position: absolute;
-            background-image: $color-btn;
+            background-image: linear-gradient(180deg,rgba(255,121,218,.9),rgba(147,86,220,.9));
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
