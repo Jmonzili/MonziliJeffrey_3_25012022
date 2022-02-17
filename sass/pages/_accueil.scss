@@ -165,8 +165,7 @@ aside {
             padding-top: 25px;
         }
         &_1 {
-            opacity: 1;
-            transition: all 0.3s ease-in-out;
+            @include heart-transition;
         }
         &_2{
             @include heart-swg;

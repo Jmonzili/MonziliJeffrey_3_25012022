@@ -48,19 +48,37 @@ main {
     width: 100%;
     margin-top: -70px;
     padding: 10px 20px 40px 20px;
-    .header_menu {
-        display: flex;
-        justify-content: space-between;
-        width: 95%;
-        .menu-title {
-            @include font-logo;
-            font-size: 28px;
+}
+
+.header_menu {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    .menu-title {
+        @include font-logo;
+        font-size: 28px;
+    }
+    i {
+        font-size: 2rem;
+    }
+    &:hover .like {
+        &_1 {
+            opacity: 1;
         }
-        i {
-            font-size: 2rem;
+        &_2 {
+            opacity: 0;
+        }
+    }
+    .like {
+        &_1 {
+            @include heart-swg;
+        }
+        &_2 {
+            @include heart-transition;
         }
     }
 }
+
 
 .sous-titre {
     font-size: 20px;
@@ -112,28 +130,25 @@ main {
 
 ._fnt {
     &-1, &-2, &-3, &-4 {
-    &:hover {
-        cursor: pointer;
-        //transition: all 0.5s ease-in-out;
-        /*
+        &:hover {
+            cursor: pointer;
+            //transition: all 0.5s ease-in-out;
+            /*
         */
-        .description-fnt {
-            //animation: slide-left 0.5s ease-in-out both;
-            transition: transform 500ms ease-in-out;
-        } 
+            .description-fnt {
+                transition: transform 500ms ease-in-out;
+            } 
         
-        .check-case {
-            //animation: slide-right 0.5s ease-in-out both;
-            animation: rotate-right 500ms cubic-bezier(0.32, 0, 0.67, 0) 0ms 1 normal both;
-            position: relative;
-            //transform: scaleX(1);
+            .check-case {
+                animation: rotate-right 500ms cubic-bezier(0.32, 0, 0.67, 0) 0ms 1 normal both;
+                position: relative;
             
-            i {
-                animation: check-rotate 0.5s ease-in-out;
-                transform: rotate(0); 
+                i {
+                    animation: check-rotate 0.5s ease-in-out;
+                    transform: rotate(0); 
+                }
             }
         }
-    }
     }
 }
 
@@ -192,7 +207,7 @@ main {
     @include shadow ;
     padding: 15px 50px;
     margin: 3rem 0;
-    @include btn-hover_transition;
+    @include transition-btn;
     &:hover {
         @include btn-hover;
     }
