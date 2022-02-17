@@ -36,7 +36,7 @@
     cursor: pointer;
 }
 
-@mixin btn-hover_transition {
+@mixin transition-btn {
     transition: 0.3s cubic-bezier(0.44,-0.73, 0.34, 1.71);
 }
 
@@ -63,8 +63,14 @@
     border-radius: 2px;
 }
 
-@mixin transition-btn {
-    transition: 0.3s cubic-bezier(0.44,-0.73, 0.34, 1.71);
+@mixin heart-swg {
+    opacity: 0;
+    position: absolute;
+    background-image: $heart-color;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: all 0.3s ease-in-out;
 }
 
 @mixin tablette-version {
