@@ -403,6 +403,8 @@ body {
   height: 100vh;
   z-index: 2;
   opacity: 0.9;
+  -webkit-animation: load-entrance 1s ease 7s 1 normal both;
+          animation: load-entrance 1s ease 7s 1 normal both;
 }
 
 .load .logo-principale {
@@ -414,11 +416,11 @@ body {
 
 .load::after {
   content: "";
-  border: 5px solid transparent;
-  border-top: 5px solid #FF79DA;
+  border-right: 5px solid transparent;
   border-radius: 50%;
   height: 5rem;
   width: 5rem;
+  border-top: 5px solid #99E2D0;
   -webkit-animation: circle 2s ease-in-out 0.5s infinite normal;
           animation: circle 2s ease-in-out 0.5s infinite normal;
 }
