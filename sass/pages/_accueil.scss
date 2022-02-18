@@ -166,7 +166,7 @@ aside {
         }
         .fnt-new {
             @include fnt-new;
-            animation: clignote 0.9s ease-in-out 6;
+            animation: clignote 0.9s ease-in-out 10s 6;
             p {
                 margin: 0;
                 font-size: 14px;

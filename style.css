@@ -693,8 +693,8 @@ aside li i {
   margin-top: 10px;
   padding: 5px;
   border-radius: 2px;
-  -webkit-animation: clignote 0.9s ease-in-out 6;
-          animation: clignote 0.9s ease-in-out 6;
+  -webkit-animation: clignote 0.9s ease-in-out 10s 6;
+          animation: clignote 0.9s ease-in-out 10s 6;
 }
 
 .resto-card .img-card .fnt-new p {
