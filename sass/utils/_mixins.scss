@@ -29,6 +29,13 @@
     transform: scale(1.05);
 }
 
+@mixin menu-card {
+    border-radius: 15px 15px 0 0;
+    width: 335px;
+    height: 175px;
+    overflow: hidden;
+}
+
 @mixin background_btn {
     background: $color-btn;
     border: 0 solid;
@@ -55,16 +62,17 @@
 }
 
 @mixin fnt-new {
-    position: relative;
-    width: 80px;
-    height: 1.9rem;
-    z-index: 1;
-    left: 70%;
+    content: "Nouveau";
+    position: absolute;
+    height: 2rem;
+    width: 5.5rem;
     background-color: $color-tertiaire;
-    color: $color-tertiaire2;
+    color: darken($color-tertiaire,40%);
+    display: grid;
+    place-items: center;
     font-weight: 500;
-    margin-top: 10px;
-    padding: 5px;
+    top: 1rem;
+    right: 1rem;
     border-radius: 2px;
 }
 

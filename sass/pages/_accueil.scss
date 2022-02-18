@@ -153,25 +153,21 @@ aside {
     margin: 15px 0;
     transition: all 0.5s ease-in-out;
     .img-card {
-        border-radius: 15px 15px 0 0;
-        width: 335px;
-        height: 175px;
-        overflow: hidden;
+        @include menu-card;
+        &_new {
+            @include menu-card;
+            position: relative;
+            &::before {
+                @include fnt-new;
+            }
+        }
         img {
             position: relative;
             bottom: 30%;
         }
-        .img_2 {
-            bottom: 90%;
-        }
-        .fnt-new {
-            @include fnt-new;
-            animation: clignote 0.9s ease-in-out 10s 6;
-            p {
-                margin: 0;
-                font-size: 14px;
-                text-align: center;
-            }
+        &.img_2 {
+            position: relative;
+            bottom: 50%;
         }
     }
     &:hover {
