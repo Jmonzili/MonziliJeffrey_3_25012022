@@ -130,16 +130,11 @@ main {
 
 ._fnt {
     &-1, &-2, &-3, &-4 {
+        overflow: hidden;
         &:hover {
             cursor: pointer;
-            .description-fnt {
-                transition: transform 500ms ease-in-out;
-            } 
-        
             .check-case {
-                animation: rotate-right 500ms cubic-bezier(0.32, 0, 0.67, 0) 0ms 1 normal both;
-                position: relative;
-            
+                margin-right: 0;
                 i {
                     animation: check-rotate 0.5s ease-in-out;
                     transform: rotate(0); 
@@ -150,14 +145,14 @@ main {
 }
 
     .check-case {
-        transform: scaleX(0);
         background: $color-tertiaire;
         color: white;
-        position: absolute;
         font-size: 2rem;
         border-radius: 0 15px 15px 0;
         padding: 0 1rem;
         box-sizing: border-box;
+        margin-right: -4rem;
+        transition: all 500ms ease-in-out;
         i {
             color: $color-tertiaire;
             background: white;
@@ -167,7 +162,6 @@ main {
             transform: rotate(-180deg);
         }
     }
-
 
 .description-fnt {
     display: flex;
