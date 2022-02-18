@@ -12,11 +12,21 @@ body {
     height: 100vh;
     z-index: 2;
     opacity: 0.9;
-    animation: load-entrance 2s ease 6s 1 normal both;
+    //animation: load-entrance 2s ease 6s 1 normal both;
     .logo-principale {
         font-size: 3rem;
         color: $color-primaire;
         animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
+    }
+    &::after {
+        content: "";
+        border: 5px solid transparent;
+        border-top: 5px solid $color-secondaire;
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        animation: circle 2s ease-in-out 0.5s infinite normal ;
+        //animation: circle 2s ease-in-out 1s infinite normal both;
     }
 }
 

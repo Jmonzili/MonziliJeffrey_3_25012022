@@ -73,6 +73,28 @@ html, body {
   }
 }
 
+@-webkit-keyframes circle {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @-webkit-keyframes load-entrance {
   from {
     -webkit-transform: scale(1);
@@ -381,8 +403,6 @@ body {
   height: 100vh;
   z-index: 2;
   opacity: 0.9;
-  -webkit-animation: load-entrance 2s ease 6s 1 normal both;
-          animation: load-entrance 2s ease 6s 1 normal both;
 }
 
 .load .logo-principale {
@@ -390,6 +410,17 @@ body {
   color: #9356DC;
   -webkit-animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
           animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
+}
+
+.load::after {
+  content: "";
+  border: 5px solid transparent;
+  border-top: 5px solid #FF79DA;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  -webkit-animation: circle 2s ease-in-out 0.5s infinite normal;
+          animation: circle 2s ease-in-out 0.5s infinite normal;
 }
 
 .localisation {
