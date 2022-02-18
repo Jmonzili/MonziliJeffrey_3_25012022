@@ -109,22 +109,22 @@ main {
     &-1 {
         @include fnt-display;
         @include shadow;
-        animation: anim-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 300ms 1 normal both;
+        animation: menu-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 300ms 1 normal both;
     }
     &-2 {
         @include fnt-display;
         @include shadow;
-        animation: anim-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 600ms 1 normal both;
+        animation: menu-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 600ms 1 normal both;
     }
     &-3 {
         @include fnt-display;
         @include shadow;
-        animation: anim-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 900ms 1 normal both;
+        animation: menu-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 900ms 1 normal both;
     }
     &-4 {
         @include fnt-display;
         @include shadow;
-        animation: anim-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 1200ms 1 normal both;
+        animation: menu-entrance 1500ms cubic-bezier(0.68, -0.6, 0.32, 1.6) 1200ms 1 normal both;
     }
 }
 
@@ -132,9 +132,6 @@ main {
     &-1, &-2, &-3, &-4 {
         &:hover {
             cursor: pointer;
-            //transition: all 0.5s ease-in-out;
-            /*
-        */
             .description-fnt {
                 transition: transform 500ms ease-in-out;
             } 

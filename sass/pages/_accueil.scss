@@ -3,6 +3,23 @@ body {
     width: 100%;
 }
 
+.load {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    height: 100vh;
+    z-index: 2;
+    opacity: 0.9;
+    animation: load-entrance 2s ease 6s 1 normal both;
+    .logo-principale {
+        font-size: 3rem;
+        color: $color-primaire;
+        animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
+    }
+}
+
 .localisation {
     width: 100%;
     background-color: $grey;
