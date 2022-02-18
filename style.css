@@ -421,6 +421,12 @@ aside li {
   transition: all 0.2s ease-in-out;
 }
 
+@media screen and (min-width: 992px) {
+  aside li {
+    width: 30%;
+  }
+}
+
 aside li:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
