@@ -2,7 +2,7 @@ body {
    @include flex-box;
     width: 100%;
 }
-
+/*
 .load {
     display: grid;
     place-items: center;
@@ -28,7 +28,7 @@ body {
         animation: circle 2s ease-in-out 0.5s infinite normal ;
     }
 }
-
+*/
 .localisation {
     width: 100%;
     background-color: $grey;
@@ -88,7 +88,7 @@ aside {
         font-weight: 500;
         transition: all 0.2s ease-in-out;
         @include desktop-version1 {
-            width: 30%;
+            width: 32%;
         }
         &:hover {
             transform: scale(1.1);
@@ -149,35 +149,33 @@ aside {
 
 
 .resto-card {
-    border: 0 solid;
-    border-radius: 15px;
-    @include shadow;
-    background-color: white;
-    margin: 15px 0;
-    transition: all 0.5s ease-in-out;
+    @include card;
     .img-card {
         @include menu-card;
         &_new {
             @include menu-card;
-            position: relative;
             &::before {
                 @include fnt-new;
+            }
+            img {
+                position: relative;
+                bottom: 30%;
+            }
+            .img-2 {
+                bottom: 90%;
             }
         }
         img {
             position: relative;
             bottom: 30%;
+            
         }
-        &.img_2 {
-            position: relative;
-            bottom: 50%;
-        }
+        
     }
     &:hover {
         @include shadow-hover;
     }
 }
-
 
 .description {
     display: flex;

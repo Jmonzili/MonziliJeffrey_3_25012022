@@ -279,38 +279,33 @@ body {
   width: 100%;
 }
 
+/*
 .load {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  position: fixed;
-  inset: 0;
-  background-color: white;
-  height: 100vh;
-  z-index: 2;
-  opacity: 0.9;
-  -webkit-animation: load-entrance 1s ease 7s 1 normal both;
-          animation: load-entrance 1s ease 7s 1 normal both;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    height: 100vh;
+    z-index: 2;
+    opacity: 0.9;
+    animation: load-entrance 1s ease 7s 1 normal both;
+    .logo-principale {
+        font-size: 3rem;
+        color: $color-primaire;
+        animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
+    }
+    &::after {
+        content: "";
+        border-right: 5px solid transparent;
+        border-radius: 50%;
+        height: 5rem;
+        width: 5rem;
+        border-top: 5px solid $color-tertiaire;
+        animation: circle 2s ease-in-out 0.5s infinite normal ;
+    }
 }
-
-.load .logo-principale {
-  font-size: 3rem;
-  color: #9356DC;
-  -webkit-animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
-          animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
-}
-
-.load::after {
-  content: "";
-  border-right: 5px solid transparent;
-  border-radius: 50%;
-  height: 5rem;
-  width: 5rem;
-  border-top: 5px solid #99E2D0;
-  -webkit-animation: circle 2s ease-in-out 0.5s infinite normal;
-          animation: circle 2s ease-in-out 0.5s infinite normal;
-}
-
+*/
 .localisation {
   width: 100%;
   background-color: #E2E2E2;
@@ -423,7 +418,7 @@ aside li {
 
 @media screen and (min-width: 992px) {
   aside li {
-    width: 30%;
+    width: 32%;
   }
 }
 
@@ -561,6 +556,7 @@ aside li i {
   border-radius: 15px 15px 0 0;
   width: 335px;
   height: 175px;
+  position: relative;
   overflow: hidden;
 }
 
@@ -568,8 +564,8 @@ aside li i {
   border-radius: 15px 15px 0 0;
   width: 335px;
   height: 175px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
 }
 
 .resto-card .img-card_new::before {
@@ -588,14 +584,18 @@ aside li i {
   border-radius: 2px;
 }
 
-.resto-card .img-card img {
+.resto-card .img-card_new img {
   position: relative;
   bottom: 30%;
 }
 
-.resto-card .img-card.img_2 {
+.resto-card .img-card_new .img-2 {
+  bottom: 90%;
+}
+
+.resto-card .img-card img {
   position: relative;
-  bottom: 50%;
+  bottom: 30%;
 }
 
 .resto-card:hover {
