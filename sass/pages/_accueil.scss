@@ -2,7 +2,7 @@ body {
    @include flex-box;
     width: 100%;
 }
-/*
+
 .load {
     display: grid;
     place-items: center;
@@ -28,7 +28,7 @@ body {
         animation: circle 2s ease-in-out 0.5s infinite normal ;
     }
 }
-*/
+
 .localisation {
     width: 100%;
     background-color: $grey;

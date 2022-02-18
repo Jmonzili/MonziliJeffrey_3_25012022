@@ -143,30 +143,6 @@ html, body {
   }
 }
 
-@-webkit-keyframes clignote {
-  from {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes clignote {
-  from {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.2;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 /* ----------------------------------------------
  ----------------PAGES MENUE------------------------
  * ---------------------------------------------- */
@@ -214,9 +190,9 @@ header {
 }
 
 .back-icon {
-  position: relative;
-  bottom: 5px;
-  right: 20%;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 2rem;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
@@ -279,33 +255,38 @@ body {
   width: 100%;
 }
 
-/*
 .load {
-    display: grid;
-    place-items: center;
-    position: fixed;
-    inset: 0;
-    background-color: white;
-    height: 100vh;
-    z-index: 2;
-    opacity: 0.9;
-    animation: load-entrance 1s ease 7s 1 normal both;
-    .logo-principale {
-        font-size: 3rem;
-        color: $color-primaire;
-        animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
-    }
-    &::after {
-        content: "";
-        border-right: 5px solid transparent;
-        border-radius: 50%;
-        height: 5rem;
-        width: 5rem;
-        border-top: 5px solid $color-tertiaire;
-        animation: circle 2s ease-in-out 0.5s infinite normal ;
-    }
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  height: 100vh;
+  z-index: 2;
+  opacity: 0.9;
+  -webkit-animation: load-entrance 1s ease 7s 1 normal both;
+          animation: load-entrance 1s ease 7s 1 normal both;
 }
-*/
+
+.load .logo-principale {
+  font-size: 3rem;
+  color: #9356DC;
+  -webkit-animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
+          animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
+}
+
+.load::after {
+  content: "";
+  border-right: 5px solid transparent;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  border-top: 5px solid #99E2D0;
+  -webkit-animation: circle 2s ease-in-out 0.5s infinite normal;
+          animation: circle 2s ease-in-out 0.5s infinite normal;
+}
+
 .localisation {
   width: 100%;
   background-color: #E2E2E2;
@@ -581,6 +562,7 @@ aside li i {
   font-weight: 500;
   top: 1rem;
   right: 1rem;
+  z-index: 1;
   border-radius: 2px;
 }
 
@@ -917,8 +899,6 @@ main {
   position: relative;
   top: 30%;
   border-radius: 30px;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
 }
 
 .description-fnt {

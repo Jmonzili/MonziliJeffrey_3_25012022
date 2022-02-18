@@ -11,9 +11,9 @@ header{
 }
 
 .back-icon {
-    position: relative;
-    bottom: 5px;
-    right: 20%;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem;
     justify-content: flex-start;
     align-items: flex-start;
     z-index: 1;
