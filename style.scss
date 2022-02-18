@@ -10,7 +10,7 @@
 
 
 body {
-    margin: O;
+    margin: 0;
     padding: 0;
 }
 
@@ -87,8 +87,7 @@ main {
     margin-left: 10px;
 }
 .menu-section {
-    display: flex;
-    flex-direction: column;
+    @include flex-box;
     width: 100%;
     @include desktop-version1 {
         flex-direction: initial;
