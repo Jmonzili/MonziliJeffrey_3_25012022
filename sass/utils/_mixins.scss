@@ -24,6 +24,11 @@
     box-shadow: 0 3px 10px 2px $shadow-color;
 }
 
+@mixin shadow-hover {
+    box-shadow: 0 3px 10px 2px $color-secondaire_hover;
+    transform: scale(1.05);
+}
+
 @mixin background_btn {
     background: $color-btn;
     border: 0 solid;
