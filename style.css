@@ -218,6 +218,10 @@ footer {
   position: relative;
 }
 
+footer a {
+  color: white;
+}
+
 footer ul {
   padding: 0;
 }

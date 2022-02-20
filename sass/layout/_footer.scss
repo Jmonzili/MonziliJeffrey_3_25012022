@@ -5,6 +5,9 @@ footer{
     width: 100%;
     padding: 0 2rem 1rem 2rem;
     position: relative;
+    a {
+        color: white;
+    }
     ul{
         padding: 0;
         @include desktop-version1 {
