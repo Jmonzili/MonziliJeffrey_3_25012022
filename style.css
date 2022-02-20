@@ -945,11 +945,12 @@ main {
   padding: 5px 0;
   white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .txt-fnt p {
   margin: 5px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn-commander {
