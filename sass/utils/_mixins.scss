@@ -112,14 +112,17 @@
     font-size: 20px;
     font-weight: 300;
     margin-left: 10px;
+    position: relative;
 }
 
 @mixin sous-titre_border {
     content: "";
-    position: relative;
-    height: 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 0rem;
+    height: 0.25rem;
     width: 3rem;
-    border-bottom: 5px solid $color-tertiaire;
+    background-color: $color-tertiaire;
 }
 
 @mixin tablette-version {
