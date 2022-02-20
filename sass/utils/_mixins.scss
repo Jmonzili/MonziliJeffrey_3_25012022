@@ -101,6 +101,27 @@
     transition: all 0.3s ease-in-out;
 }
 
+@mixin block-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@mixin sous-titre {
+    font-size: 20px;
+    font-weight: 300;
+    margin-left: 10px;
+}
+
+@mixin sous-titre_border {
+    content: "";
+    position: relative;
+    height: 2rem;
+    width: 3rem;
+    border-bottom: 5px solid $color-tertiaire;
+}
+
 @mixin tablette-version {
     @media screen and (min-width: map-get($breakpoints,tablette)) {
         @content;

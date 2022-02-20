@@ -759,6 +759,15 @@ main {
   margin-left: 10px;
 }
 
+.sous-titre::after {
+  content: "";
+  position: absolute;
+  height: 2rem;
+  width: 3rem;
+  border-bottom: 5px solid #99E2D0;
+  left: 2rem;
+}
+
 .menu-section {
   display: -webkit-box;
   display: -ms-flexbox;

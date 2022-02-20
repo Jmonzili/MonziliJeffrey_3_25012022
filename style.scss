@@ -80,12 +80,6 @@ main {
     }
 }
 
-
-.sous-titre {
-    font-size: 20px;
-    font-weight: 300;
-    margin-left: 10px;
-}
 .menu-section {
     @include flex-box;
     width: 100%;
@@ -93,17 +87,50 @@ main {
         flex-direction: initial;
         justify-content: space-around
     }
-    .block-menu {
-        &_1, &_2, &_3 {
-            @include flex-box;
-            justify-content: space-between;
-            width: 100%;
-            @include desktop-version1 {
-                width: 30%;
+}
+
+.block-menu {
+    &_1{
+        @include block-menu;
+        .sous-titre {
+            @include sous-titre;
+            &::after {
+                @include sous-titre_border;
+                left: 2rem; 
             }
+        }
+        @include desktop-version1 {
+            width: 30%;
+        }
+    }
+    &_2 {
+        @include block-menu;
+        .sous-titre {
+            @include sous-titre;
+            &::after {
+                @include sous-titre_border;
+                right: 10rem; 
+            }
+        }
+        @include desktop-version1 {
+            width: 30%;
+        }
+    }
+    &_3 {
+        @include block-menu;
+        .sous-titre {
+            @include sous-titre;
+            &::after {
+                @include sous-titre_border;
+                left: 2rem; 
+            }
+        }
+        @include desktop-version1 {
+            width: 30%;
         }
     }
 }
+
 
 ._fnt{
     &-1 {
@@ -144,23 +171,23 @@ main {
     }
 }
 
-    .check-case {
-        background: $color-tertiaire;
-        color: white;
-        font-size: 2rem;
-        border-radius: 0 15px 15px 0;
-        padding: 0 1rem;
-        box-sizing: border-box;
-        margin-right: -4rem;
-        transition: all 500ms ease-in-out;
-        i {
-            color: $color-tertiaire;
-            background: white;
-            position: relative;
-            top: 30%; 
-            border-radius: 30px;
-        }
+.check-case {
+    background: $color-tertiaire;
+    color: white;
+    font-size: 2rem;
+    border-radius: 0 15px 15px 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin-right: -4rem;
+    transition: all 500ms ease-in-out;
+    i {
+        color: $color-tertiaire;
+        background: white;
+        position: relative;
+        top: 30%; 
+        border-radius: 30px;
     }
+}
 
 .description-fnt {
     display: flex;
@@ -201,5 +228,13 @@ main {
     @include transition-btn;
     &:hover {
         @include btn-hover;
+    }
+}
+/*
+.sous-titre {
+    @include sous-titre;
+    &::after {
+        @include sous-titre_border;
+        left: 2rem; 
     }
 }
