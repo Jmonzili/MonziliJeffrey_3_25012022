@@ -18,6 +18,9 @@ header{
     align-items: flex-start;
     z-index: 1;
     font-size: 1.5rem;
+    @include tablette-version {
+        left: 15%;
+    }
 }
 .logo-principale {
     @include font-logo;

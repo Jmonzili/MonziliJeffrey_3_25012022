@@ -12,7 +12,7 @@ footer{
         padding: 0;
         @include desktop-version1 {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
         }
     }
     li{
