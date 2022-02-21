@@ -30,14 +30,26 @@ body {
     }
 }
 
-.localisation {
+form {
     width: 100%;
+}
+.search {
+    width: 100%;
+    height: 3.5rem;
     background-color: $grey;
     display: flex;
     justify-content: center;
     align-items: center;
-    i {
-        margin-right: 5%;
+    .icone-map {
+        margin-right: 1rem;
+        font-size: 1.5rem;
+    }
+    &_bar {
+        input {
+            border: 0 solid;
+            background-color: $grey;
+            font-size: 16px;
+        }
     }
 }
 
