@@ -22,4 +22,7 @@ footer{
     .mini-logo{
     @include font-logo;
     }
+    @include desktop-version1 {
+        text-align: center;
+    }
 }
