@@ -384,6 +384,8 @@ form {
 .explore-btn:hover {
   opacity: 0.7;
   cursor: pointer;
+  -webkit-box-shadow: 0 3px 10px 2px #201f1f;
+          box-shadow: 0 3px 10px 2px #201f1f;
 }
 
 aside {
@@ -1097,6 +1099,8 @@ main {
 .btn-commander:hover {
   opacity: 0.7;
   cursor: pointer;
+  -webkit-box-shadow: 0 3px 10px 2px #201f1f;
+          box-shadow: 0 3px 10px 2px #201f1f;
 }
 
 /*
