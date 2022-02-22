@@ -4,7 +4,9 @@ body {
 }
 
 .load {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     place-items: center;
     position: fixed;
     inset: 0;
@@ -12,11 +14,11 @@ body {
     height: 100vh;
     z-index: 2;
     opacity: 1;
-    animation: load-entrance 1s ease 7s 1 normal both;
+    animation: load-entrance 1s ease 3s 1 normal both;
     .logo-principale {
         font-size: 3rem;
         color: $color-primaire;
-        animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 3 normal forwards;
+        animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 1 normal forwards;
     }
     &::after {
         content: "";
@@ -24,7 +26,6 @@ body {
         border-radius: 50%;
         height: 5rem;
         width: 5rem;
-        
         border-top: 5px solid $color-tertiaire;
         animation: circle 2s ease-in-out 0.5s infinite normal ;
     }
