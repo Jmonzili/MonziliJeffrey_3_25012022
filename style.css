@@ -55,7 +55,7 @@ html, body {
   }
   } 
  * ---------------------------------------------- */
-@-webkit-keyframes shake {
+@-webkit-keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
@@ -72,7 +72,7 @@ html, body {
     transform: scale3d(1, 1, 1);
   }
 }
-@keyframes shake {
+@keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
@@ -312,8 +312,8 @@ body {
 .load .logo-principale {
   font-size: 3rem;
   color: #9356DC;
-  -webkit-animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 1 normal forwards;
-          animation: shake 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 1 normal forwards;
+  -webkit-animation: pulse 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 1 normal forwards;
+          animation: pulse 2s cubic-bezier(0.36, 0, 0.66, -0.56) 1s 1 normal forwards;
 }
 
 .load::after {
