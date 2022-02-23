@@ -1,9 +1,5 @@
 /* ----------------------------------------------
- -------------------ACCUEIL------------------------
- * ---------------------------------------------- */
-
- @keyframes shake {
-    0%,
+ 0%,
     100% {
       transform: translateX(0%);
       transform-origin: 50% 50%;
@@ -29,16 +25,47 @@
       transform: translateX(-6px) rotate(-1.2deg);
     }
   }
+ -------------------ACCUEIL------------------------
 
-  @keyframes circle {
-    0% {
-      transform: rotate(0);
-    }
-    
-    100% {
-      transform: rotate(360deg);
-    }
+ @keyframes pulse {
+   from {
+  transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
   }
+  50% {
+  transform: scale3d(1.05, 1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+  transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  }
+  } 
+ * ---------------------------------------------- */
+
+@keyframes shake {
+  from {
+    transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+  to {
+    transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+} 
+
+@keyframes circle {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
  @keyframes load-entrance {
     from {
