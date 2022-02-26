@@ -126,6 +126,8 @@
     background-color: $color-tertiaire;
 }
 
+/**************-----Breakpoints------****************/
+
 @mixin tablette-version {
     @media screen and (min-width: map-get($breakpoints,tablette)) {
         @content;
