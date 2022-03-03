@@ -60,34 +60,28 @@ html, body {
   from {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
   }
   50% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
             transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
   }
   to {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
   }
 }
 @keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
   }
   50% {
     -webkit-transform: scale3d(1.1, 1.1, 1.1);
             transform: scale3d(1.1, 1.1, 1.1);
-    transform: scale3d(1.1, 1.1, 1.1);
   }
   to {
     -webkit-transform: scale3d(1, 1, 1);
             transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
   }
 }
 
@@ -397,8 +391,8 @@ form {
           box-shadow: 0 3px 10px 2px #C2C2C2;
   padding: 1rem;
   margin: 20px;
-  -webkit-transition: 0.3s cubic-bezier(0.44, -0.73, 0.34, 1.71);
-  transition: 0.3s cubic-bezier(0.44, -0.73, 0.34, 1.71);
+  -webkit-transition: 0.5s cubic-bezier(0.44, -0.73, 0.34, 1.71);
+  transition: 0.5s cubic-bezier(0.44, -0.73, 0.34, 1.71);
 }
 
 .explore-btn:hover {
@@ -1117,8 +1111,8 @@ main {
           box-shadow: 0 3px 10px 2px #C2C2C2;
   padding: 15px 50px;
   margin: 3rem 0;
-  -webkit-transition: 0.3s cubic-bezier(0.44, -0.73, 0.34, 1.71);
-  transition: 0.3s cubic-bezier(0.44, -0.73, 0.34, 1.71);
+  -webkit-transition: 0.5s cubic-bezier(0.44, -0.73, 0.34, 1.71);
+  transition: 0.5s cubic-bezier(0.44, -0.73, 0.34, 1.71);
 }
 
 .btn-commander:hover {
