@@ -7,6 +7,9 @@ footer{
     position: relative;
     a {
         color: white;
+        &:visited {
+            color: white;
+        }
     }
     ul{
         padding: 0;

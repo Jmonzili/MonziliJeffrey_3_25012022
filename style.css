@@ -240,6 +240,10 @@ footer a {
   color: white;
 }
 
+footer a:visited {
+  color: white;
+}
+
 footer ul {
   padding: 0;
 }
