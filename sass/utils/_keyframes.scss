@@ -46,15 +46,12 @@
 @keyframes pulse {
   from {
     transform: scale3d(1, 1, 1);
-    //transform: scale3d(1, 1, 1);
   }
   50% {
     transform: scale3d(1.1, 1.1, 1.1);
-    //transform: scale3d(1.1, 1.1, 1.1);
   }
   to {
     transform: scale3d(1, 1, 1);
-    //transform: scale3d(1, 1, 1);
   }
 } 
 
@@ -84,7 +81,7 @@
 @keyframes menu-entrance {
   0% {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(4rem);
   }
   
   100% {
@@ -96,10 +93,8 @@
 @keyframes check-rotate {
     from {
         transform:rotate(0);
-        transform:rotate(0)
     }
     to {
         transform:rotate(360deg);
-        transform:rotate(360deg)
     }
 }

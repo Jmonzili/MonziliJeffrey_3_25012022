@@ -135,8 +135,8 @@ html, body {
 @-webkit-keyframes menu-entrance {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
   }
   100% {
     opacity: 1;
@@ -147,8 +147,8 @@ html, body {
 @keyframes menu-entrance {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(50px);
-            transform: translateY(50px);
+    -webkit-transform: translateY(4rem);
+            transform: translateY(4rem);
   }
   100% {
     opacity: 1;
@@ -161,12 +161,10 @@ html, body {
   from {
     -webkit-transform: rotate(0);
             transform: rotate(0);
-    transform: rotate(0);
   }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    transform: rotate(360deg);
   }
 }
 
@@ -174,12 +172,10 @@ html, body {
   from {
     -webkit-transform: rotate(0);
             transform: rotate(0);
-    transform: rotate(0);
   }
   to {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    transform: rotate(360deg);
   }
 }
 
